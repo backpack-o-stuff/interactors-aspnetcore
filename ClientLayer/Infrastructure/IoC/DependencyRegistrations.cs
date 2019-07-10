@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
+using BOS.ClientLayer.AllTheOtherLayers.Data;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BOS.ClientLayer.Infrastructure.IoC
@@ -66,6 +67,7 @@ namespace BOS.ClientLayer.Infrastructure.IoC
         private static void RegisterStatefulAcrossAllRequestsDependencies(IServiceCollection services)
         {
             // services.AddSingleton<>();
+            services.AddSingleton<IMonsterRepository, MonsterRepository>();
         }
     }
 }
