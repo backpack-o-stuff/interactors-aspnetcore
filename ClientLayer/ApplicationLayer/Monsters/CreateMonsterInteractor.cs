@@ -17,7 +17,7 @@
     // the coordination of and between the interactors it wraps to create a larger
     // business need/case.
     // 
-    // ex. playerDefeatedByMonsterInteractor 
+    // ex. playerDefeatedByMonsterInteractor
     // Would call and coordinate the following:
     //   defeatPlayerInterator
     //   levelupMonsterInteractor
@@ -28,10 +28,8 @@ using BOS.ClientLayer.AllTheOtherLayers.Entities;
 
 namespace BOS.ClientLayer.ApplicationLayer.Monsters
 {
-    public interface ICreateMonsterInteractor
-    {
-        InteractorResult<Monster> Call(CreateMonsterRequest request);
-    }
+    public interface ICreateMonsterInteractor 
+        : IInteractor<Monster, CreateMonsterRequest> {}
 
     public class CreateMonsterRequest
     {
