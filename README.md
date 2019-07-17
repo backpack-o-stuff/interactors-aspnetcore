@@ -1,4 +1,4 @@
-# interactors-aspnetcore
+# interactors-dotnetcore
 
 Interactor pattern and helpers in ASP.NET Core.
 
